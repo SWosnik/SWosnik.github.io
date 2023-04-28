@@ -1,0 +1,157 @@
+.container {
+	margin-top: 1rem !important;
+}
+
+#cookie_consent  {
+    background-color: #900;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#cookie_consent  form , table{
+    margin: 1rem;
+}
+
+#cookie_consent  input[type="submit"]  {
+    background-color: #0ff;
+    border: 3px solid #0bb;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #555;
+}
+
+#banner {
+	background-image: url("img/banner.jpg");
+	background-size:100%;
+	#min-height:130px;
+	height:0;
+	padding-bottom: 41.67%;
+	background-repeat:no-repeat;
+	#min-width:300px;
+	color:#900;
+	font-weight:600;
+	font-size: 2.5rem;
+	padding-left: 1.5rem;
+}
+
+.menu {
+	padding-left: 1rem;
+	#padding-top: .5rem;
+}
+
+.level1 {
+	background:#aaa;
+}
+.level2 {
+	background:#ccc;
+}
+.level3 {
+	background:#eee;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul a , span{
+    color: black;
+	text-decoration: none;
+    padding: 3px;
+	font-weight: 600;
+}
+
+.menu ul li {
+    float:left;
+    margin-right: 5px;
+    position:relative;
+    white-space: nowrap;
+	margin-top: .5rem;
+	border-top-left-radius: .5rem;
+	border-top-right-radius: .5rem;
+	margin-bottom: 0;
+    border-left: solid 2px #888;
+    border-top: solid 2px #888;
+    border-right: solid 2px #888;
+}
+
+.menu ul li.sdoc {
+	background:#fff;
+    border-bottom: solid 5px #fff;
+}
+
+.level1  ul li.doc {
+	border-bottom-left-radius: .5rem;
+	border-bottom-right-radius: .5rem;
+    border-bottom: solid 2px #888;
+    margin-bottom: 2px;
+}
+
+
+.level1  ul li.docs {
+	background:#888;
+    border-bottom: solid 5px #888;
+}
+
+.level1 ul li.sdocs {
+	background:#ccc;
+    border-bottom: solid 5px #ccc;
+}
+
+
+.level2  ul li.doc {
+	border-bottom-left-radius: .5rem;
+	border-bottom-right-radius: .5rem;
+    border-bottom: solid 2px #888;
+    margin-bottom: 2px;
+}
+
+
+.level2  ul li.docs {
+	background:#ccc;
+    border-bottom: solid 5px #ccc;
+}
+
+.level2 ul li.sdocs {
+	background:#eee;
+    border-bottom: solid 5px #eee;
+}
+
+.level3  ul li.doc {
+	border-bottom-left-radius: .5rem;
+	border-bottom-right-radius: .5rem;
+    border-bottom: solid 2px #888;
+    margin-bottom: 2px;
+}
+
+
+.level3  ul li.docs {
+	background:#eee;
+    border-bottom: solid 5px #eee;
+}
+
+.level3 ul li.sdocs {
+	background:#fff;
+    border-bottom: solid 5px #fff;
+}
+
+.menu ul ul {
+    visibility: hidden;
+    position: absolute;
+    width:150px;
+    background:#d0d0d0;
+	border: solid 3px #d0d0d0;
+	border-right: solid 6px #d0d0d0;
+    z-index:1;
+}
+
+.membp_oneline{
+	padding: .5rem;
+	background:#eee;
+}
+.membp_oneline form {
+	margin-bottom: 0px;
+}
+

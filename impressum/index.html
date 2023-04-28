@@ -8,29 +8,12 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!--
-    The page_title contains the title for a page as shown in the navigation.
-    Site name contains the name as defined in the mkdocs.yml
-  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Impressum - SWosnik.github.io</title>
-
-  <!--
-    Just add a favicon.ico image to the docs.
-  -->
-     <link rel="shortcut icon" href="../img/favicon.ico">
-
-
-  <!--
-    You can include external assets of course, but be aware that it means the
-    documentation may not work well offline.
-  -->
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
-
-  <link rel="stylesheet" href="../css/theme.css">
-
+  <link rel="shortcut icon" href="../img/favicon.png">
+  <link rel="stylesheet" href="../stylesheet.css">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/skeleton.css">
   <!--
     extra_ess contains paths to CSS files in the users
     documentation directory or a list of CSS files defined in
@@ -45,10 +28,6 @@
     .. beforehand which will be the relative path to
     the root of the documentation.
   -->
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-  crossorigin="anonymous"></script>
   <script src="../js/theme.js"></script>
 
   
@@ -65,35 +44,25 @@
     <script src="../search/main.js"></script>
   
 
-  <!--
-    Include Google Analytics tracking code.
-
-    http://www.mkdocs.org/user-guide/configuration/#google_analytics
-  -->
-  
-
+  <link rel="shortcut icon" href="img/favicon.png">
 </head>
 
 <body>
+  <div class="container">
+    <div class="row">
+      <h1>This is a first approach to create a DSGVO compliant private page with using mkdocs. The page is hosted on Github.</h1>
+    </div>
 
-  <h1>This is a first approach to create a DSGVO compliant private page with using mkdocs. The page is hosted on Github.</h1>
-
-  <hr/>
-
-  <h2>Documentation Navigation</h2>
-
-  <!--
-    Create the navigation for the documentation.
-
-    Because we don't know how many levels deep the navigation is, it needs to
-    be included in it's own file so it can be recursive. Otherwise the theme
-    can also only support a specific number of levels.
-
-    See the nav.html file for more details about how this works.
-  -->
-  <ul>
-  
-    <!--
+    <div class="row">
+      <div id="banner" class="twelve columns">
+        <br/>TODO SITE-NAME
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns menu level1">
+        <ul>
+        
+          <!--
 
 -->
 
@@ -101,8 +70,8 @@
     <a href="./">Impressum</a>
 </li>
 
-  
-    <!--
+        
+          <!--
 
 -->
 
@@ -110,8 +79,8 @@
     <a href="../datenschutzerklaerung/">Datenschutzerlärung</a>
 </li>
 
-  
-    <!--
+        
+          <!--
 
 -->
 
@@ -149,8 +118,8 @@
     </ul>
   </li>
 
-  
-    <!--
+        
+          <!--
 
 -->
 
@@ -170,64 +139,60 @@
     </ul>
   </li>
 
-  
-  </ul>
+        
+        </ul>
+      </div>
+    </div><!-- row -->
+    <div class="row">
+      <div class="twelve columns menu level2">
+        <ul>
+        
+            <li classs="doc"><a href="#impressum">Impressum</a></li>
+            
+        
+        </ul>
+      </div>
+    </div><!-- row -->
 
-  <hr/>
+    <div class="row">
+      <div id="content" class="twelve columns">
+        <h2>Support for search</h2>
+        <!--
+          Create a search form that sends the user to the search.html file - this is
+          the other file in the template which adds search to the theme. The only
+          requirement here is that there is a text input with the name 'q' and the
+          action and methods match below.
+        -->
+        <div role="search">
+          <form action="../search.html" method="get">
+            <input type="search" name="q" placeholder="Search docs" />
+          </form>
+        </div>
 
-  <h2>Support for search</h2>
-  <!--
-    Create a search form that sends the user to the search.html file - this is
-    the other file in the template which adds search to the theme. The only
-    requirement here is that there is a text input with the name 'q' and the
-    action and methods match below.
-  -->
-  <div role="search">
-    <form action="../search.html" method="get">
-      <input type="search" name="q" placeholder="Search docs" />
-    </form>
-  </div>
+        <h2>Next and previous links</h2>
+        <!--
+          Implement the previous and next links to cycle through the pages.
+        -->
+        
+          <div>
+            
+              &#8592; Previous Page
+            
+            -
+            
+              <a href="../datenschutzerklaerung/" title="Datenschutzerlärung"/>Next Page &#8594;</a>
+            
+          </div>
+        
 
-  <hr/>
+        <h2>Link to the source</h2>
+        <!--
+          Support repo URL
+        -->
+        
 
-  <h2>Next and previous links</h2>
-  <!--
-    Implement the previous and next links to cycle through the pages.
-  -->
-  
-    <div>
-      
-        &#8592; Previous Page
-      
-      -
-      
-        <a href="../datenschutzerklaerung/" title="Datenschutzerlärung"/>Next Page &#8594;</a>
-      
-    </div>
-  
-
-  <hr/>
-
-  <h2>Link to the source</h2>
-  <!--
-    Support repo URL
-  -->
-  
-
-  <hr/>
-
-  <h2>Show the table of contents for the current page</h2>
-  <ul>
-  
-      <li><a href="#impressum">Impressum</a></li>
-      
-  
-  </ul>
-
-  <hr/>
-
-  
-    <h1 id="impressum">Impressum</h1>
+        
+          <h1 id="impressum">Impressum</h1>
 <p>Stefan Wosnik
 Karlschmitter Weg 8B
 35580 Wetzlar</p>
@@ -236,16 +201,64 @@ Karlschmitter Weg 8B
 übernehmen wir keine Haftung für die Inhalte externer
 Links. Für den Inhalt der verlinkten Seiten sind
 ausschließlich deren Betreiber verantwortlich.</p>
-  
-
-  <hr/>
-
-  Built with <a href="https://www.mkdocs.org">MkDocs</a>.
-
-  <!--
-  MkDocs version      : 1.4.2
-  Docs Build Date UTC : 2023-04-28 09:40:07.701562+00:00
-  -->
-
+        
+      </div>
+    <div class="row">
+      <div id="footer" class="twelve columns">
+        <!-- -->
+        Built with <a href="https://www.mkdocs.org">MkDocs</a>.
+        MkDocs version      : 1.4.2
+        Docs Build Date UTC : 2023-04-28 13:07:22.407351+00:00
+      </div>
+    </div><!-- row -->
+  </div><!-- container -->
 </body>
 </html>
+
+<!-- demo
+
+<body <?php echo onload();?>>
+<div class="container">
+    <div class="row">
+      <div id="cookie_consent" class="twelve columns">
+      <?php echo ask_cookie_consent('Cookie Consent');?>
+      </div>
+	</div>
+      <div id="membersnotice"  class="twelve columns">
+         <?php echo membersnotice(1);?>
+      </div>
+    <div class="row">
+		 <div id="banner" class="twelve columns">
+			<br/><?php echo sitename();?>
+		</div>
+	</div>
+	<div class="row">
+		<div class="twelve columns menu level1">
+			 <?php echo toc(1);?>
+		</div>
+	</div>
+	<div class="row">
+		<div class="twelve columns menu level2">
+			 <?php echo toc(2);?>
+		</div>
+	</div>
+	<div class="row">
+		<div class="twelve columns menu level3">
+			 <?php echo toc(3);?>
+		</div>
+	</div>
+	<div class="row">
+		<div id="content" class="twelve columns">
+			<?php echo content();?>
+		</div>
+	</div>
+	<div class="row">
+		<div id="footer" class="twelve columns">
+			<?php echo top();?> | 2001-2016 &#169; s.wosnik | <a href="?Impressum">Impressum</a> | <a target="_blank" href="http://www.cmsimple-xh.org/">Powered by CMSimple_XH</a> | Template by <a href="http://www.wosnik.de/">s.wosnik</a>
+		</div>
+	</div>
+ </div>
+</body>
+</html>
+
+demo -->
