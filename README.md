@@ -1,2 +1,2 @@
 # SWosnik.github.io
-Personal page
+Personal page build with mkdocs
