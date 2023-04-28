@@ -1,4 +1,5 @@
 ﻿site_name: SWosnik.github.io
+site_url: https://swosnik.github.io
 
 theme:
     name: null
