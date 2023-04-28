@@ -1,1 +1,15 @@
 ﻿site_name: SWosnik.github.io
+
+theme:
+    name: null
+    custom_dir: 'custom_theme/'
+
+nav:
+    - Impressum: 'impressum.md'
+    - Datenschutzerlärung: 'datenschutzerklaerung.md'
+    - Rezepte:
+      - Herzhafte Pfannkuchen: 'Rezepte/Herzhafte Pfannkuchen.md'
+      - Schnelles Naan: 'Rezepte/Schnelles Naan.md'
+      - Süße Pfannkuchen: 'Rezepte/Suesse Pfannkuchen.md'
+    - Software Themen:
+      - First Post: 'SoftwareBlog/first-post-software-blog.md'
